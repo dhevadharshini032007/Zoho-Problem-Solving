@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class MaxMinSum {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,5,30,2,8));
+
+        int max = list.get(0);
+        int min = list.get(0);
+        int sum = 0;
+
+        for(int num : list) {
+            if(num > max) max = num;
+            if(num < min) min = num;
+            sum += num;
+        }
+
+        System.out.println("Maximum: " + max);
+        System.out.println("Minimum: " + min);
+        System.out.println("Sum: " + sum);
+    }
+}
