@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class BasicOperations {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,20,30,40,50));
+
+        list.add(2, 100);       // Add at index 2
+        list.remove(3);         // Remove index 3
+        list.set(1, 200);       // Replace index 1
+
+        System.out.println("Updated List: " + list);
+
+        System.out.println("Contains 30? " + list.contains(30));
+        System.out.println("Size: " + list.size());
+    }
+}
